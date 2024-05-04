@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem;
+  width: 100%;
+}
+
+.hambugger_right {
+  display: none;
+}
+
+.right,
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.nadLogo {
+  width: 80px;
+  height: auto;
+}
+
+.navItem {
+  margin: 1rem;
+}
+
+.convert {
+  /* padding: 1rem 0; */
+  /* border: 2px solid red; */
+}
+
+.spanNav,
+.check {
+  padding: 0.3rem;
+  border: solid #876DFF;
+}
+
+.navbtn {
+  background-color: black;
+  color: white;
+  border: solid black;
+  box-shadow: 0 0 5px 2px rgb(95, 89, 89);
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.select {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.check {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: #876DFF;
+  padding: 0.35rem 0.5rem;
+}
+
+.price {
+  font-size: smaller;
+  background-color: rgb(47, 41, 41);
+  color: white;
+  /* padding: 0.1rem; */
+  border-radius: 0.2rem;
+}
+
+
+
+/* Button */
+.btn2 {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin-left: 2rem;
+  border: solid white;
+  border-radius: 2px;
+}
+
+.btn1 {
+  background-color: #876DFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  /* margin: 0 0.5rem; */
+  border-radius: 2px;
+
+}
+
+/* Button Container */
+.btn-con {
+  display: flex;
+  border: none;
+  margin: 1rem 0;
+}
+
+/*  Trade */
+.bodySwap {
+  display: flex;
+  width: 85%;
+  box-sizing: border-box;
+  margin-top: 8rem;
+}
+
+.exp,
+.swapTabs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+
+.trade,
+.securely {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.securely {
+  color: #876DFF;
+}
+
+.res {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Swap Tab */
+/* .swapTab {
+  display: flex;
+  background-color: #876DFF;
+  margin: 0 4rem;
+} */
+
+.swapTab {
+  display: flex;
+  flex-direction: column;
+  background-color: #876DFF;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* margin: 2rem 4rem; */
+  margin: 0 4rem;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  position: relative;
+}
+
+.layer1 {
+  background-color: rgb(47, 41, 41);
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+.layer2 {
+  background-color: #876DFF !important;
+}
+
+.swap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.1rem 2.7rem 0 2.7rem;
+}
+
+.tokens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: 2px solid red; */
+}
+
+.from,
+.to,
+.amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  background-color: black;
+  padding: 1.35rem;
+  border-radius: 0.5rem;
+  color: white;
+  /* position: relative; */
+}
+
+.conversion {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.1rem 0.5rem;
+  background-color: rgb(32, 26, 26);
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  padding: unset;
+  /* margin-bottom: 0.1rem; */
+
+}
+
+.amount input {
+  border: none;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+
+}
+
+/* Wallet Options */
+.walletOptionsPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 2rem 6rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+}
+
+.popupContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+.popupContent ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.popupContent ul li {
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+
+/* Media query for smaller screens */
+/* @media screen and (max-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
+
+  .hambugger_right {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .right.show {
+    display: flex;
+    align-items: center;
+  }
+} */
